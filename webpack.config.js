@@ -8,7 +8,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.jsx?$/,
+                test: /\.js[x]?$/,
                 loader: 'babel-loader'
             }
         ]
@@ -17,7 +17,8 @@ module.exports = {
         template: './src/index.html'
     })],
     devServer: {
-        historyApiFallback: true
+        historyApiFallback: true,
+        open: false
     },
     externals: {
         // global app config object
